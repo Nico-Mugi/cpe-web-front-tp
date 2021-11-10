@@ -47,3 +47,18 @@ function showSymptomes(chevron) {
     if (chevron.classList.contains('up')) sympthomesContainer.style.display = "block"
     else sympthomesContainer.style.display = "none"
 }
+
+async function includeComponent() {
+    // Trouver le conteneur des pathologies pour y insérer les pathologies
+    let pathologiesContainer = document.querySelector(".pathologies_container");
+    console.log(pathologiesContainer)
+    let url = "http://localhost/cpe-web-api-tp/api.php/meridiens/all";
+    let response = await fetch(url, {
+        method: 'GET'
+    });
+    let result = await response.json()
+    console.log(result)
+
+
+};
+includeComponent()

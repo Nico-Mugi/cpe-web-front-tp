@@ -85,57 +85,6 @@ body {
             }
         }
     }
-    .pathologies_container {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 50px;
-        margin: 50px;
-        .pathologie_card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-            margin: 25px 0;
-            padding: 25px;
-            width: fit-content;
-            height: fit-content;
-            border-radius: 15px;
-            .meridien {
-                color: #00000099;
-            }
-            .chevron {
-                position: absolute;
-                width: 17px;
-                height: 17px;
-                border-left: 1.5px solid #000;
-                border-bottom: 1.5px solid #000;
-                box-sizing: border-box;
-                cursor: pointer;
-                transform-origin: 25% 75%;
-                transition: ease-in-out .3s;
-            }
-            .down {
-                transform: translate(100%, -20%) rotate( -45deg);
-            }
-            .up {
-                transform: translate(100%, -20%) rotate( 135deg);
-            }
-            h3 {
-                margin-top: 0;
-            }
-            .symptomes_title {
-                margin-bottom: 0;
-            }
-            .sympthomes_container {
-                list-style: none;
-                margin-bottom: 0;
-                display: none;
-                transition: all 3s;
-            }
-        }
-        .pathologie_card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-    }
 }
 
 .button {
